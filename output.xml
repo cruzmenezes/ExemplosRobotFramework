@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-09T23:54:01.090783" rpa="false" schemaversion="5">
+<suite id="s1" name="Modelo" source="D:\GIT\ExemplosRobotFramework\modelo.robot">
+<test id="s1-t1" name="Cenário 1: Acessando o site do Robot" line="11">
+<kw name="abrir site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:54:01.782726" level="INFO">Opening browser 'firefox' to base url 'https://www.usegloriou.com.br'.</msg>
+<arg>https://www.usegloriou.com.br</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-09T23:54:01.782402" elapsed="9.940639"/>
+</kw>
+<status status="PASS" start="2025-08-09T23:54:01.781050" elapsed="9.942286"/>
+</kw>
+<status status="PASS" start="2025-08-09T23:54:01.779482" elapsed="9.944727"/>
+</test>
+<status status="PASS" start="2025-08-09T23:54:01.093606" elapsed="10.632462"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Modelo" id="s1" pass="1" fail="0" skip="0">Modelo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
