@@ -1,29 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-09T23:54:01.090783" rpa="false" schemaversion="5">
-<suite id="s1" name="Modelo" source="D:\GIT\ExemplosRobotFramework\modelo.robot">
-<test id="s1-t1" name="Cenário 1: Acessando o site do Robot" line="11">
-<kw name="abrir site">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-18T19:43:35.711929" rpa="false" schemaversion="5">
+<suite id="s1" name="Setup Teardown" source="D:\GIT\ExemplosRobotFramework\setup_teardown.robot">
+<test id="s1-t1" name="Acessar o site Organo" line="12">
+<kw name="Dado que eu acesse o Organo">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-09T23:54:01.782726" level="INFO">Opening browser 'firefox' to base url 'https://www.usegloriou.com.br'.</msg>
-<arg>https://www.usegloriou.com.br</arg>
+<msg time="2025-08-18T19:43:36.335752" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/'.</msg>
+<msg time="2025-08-18T19:43:51.790066" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-18T19:43:51.790649" level="FAIL">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//localhost%3A3000/&amp;c=UTF-8&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20localhost%3A3000.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:910:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:59:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:348:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+</msg>
+<arg>http://localhost:3000/</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-09T23:54:01.782402" elapsed="9.940639"/>
+<status status="FAIL" start="2025-08-18T19:43:36.335419" elapsed="15.469173">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//localhost%3A3000/&amp;c=UTF-8&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20localhost%3A3000.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:910:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:59:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:348:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+</status>
 </kw>
-<status status="PASS" start="2025-08-09T23:54:01.781050" elapsed="9.942286"/>
+<status status="FAIL" start="2025-08-18T19:43:36.334140" elapsed="15.471161">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//localhost%3A3000/&amp;c=UTF-8&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20localhost%3A3000.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:910:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:59:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:348:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+</status>
 </kw>
-<status status="PASS" start="2025-08-09T23:54:01.779482" elapsed="9.944727"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-08-18T19:43:51.806194" elapsed="0.000141"/>
+</kw>
+<kw name="Fechar o navegador">
+<status status="NOT RUN" start="2025-08-18T19:43:51.807108" elapsed="0.000078"/>
+</kw>
+<status status="FAIL" start="2025-08-18T19:43:36.333081" elapsed="15.474616">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//localhost%3A3000/&amp;c=UTF-8&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20localhost%3A3000.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:910:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:59:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:348:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+</status>
 </test>
-<status status="PASS" start="2025-08-09T23:54:01.093606" elapsed="10.632462"/>
+<status status="FAIL" start="2025-08-18T19:43:35.714853" elapsed="16.094812"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Modelo" id="s1" pass="1" fail="0" skip="0">Modelo</stat>
+<stat name="Setup Teardown" id="s1" pass="0" fail="1" skip="0">Setup Teardown</stat>
 </suite>
 </statistics>
 <errors>
